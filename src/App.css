@@ -13,6 +13,21 @@
   }
 }
 
+.header-shadow{
+  background-image: url('../public/pixel81.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+
+  
+}
+.AI{
+  background-image: url('../public/ai.ico');
+
+
+  
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

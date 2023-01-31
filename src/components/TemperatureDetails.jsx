@@ -7,32 +7,39 @@ function TemperatureDetails({weather:{
 }}) {
   return (
     <div>
+        
         <div className="flex items-center justify-center py-6 text-xl text-cyan-300">
             <p>{details}</p>
+            <img src={iconUrlFromCode(icon)} alt="" className="w-50"/>
         </div>
+     
+      
+
         <div className=" flex flex-row items-center justify-between text-white py-3">
 
-            {/* //put image */}
-            <img src={iconUrlFromCode(icon)} alt="" className="w-20"/>
+        
+      
 
+        <img src={iconUrlFromCode(icon)} alt="" className="w-50"/>
+            <p className="text-5xl items-center justify-center py-6">{`${temp}°`}</p>
 
-            <p className="text-5xl">{`${temp}°`}</p>
+        
 
-            <div className="flex flex-col space-y-2">
-                <div className="flex font-light text-sm items-center justify-center">
+            <div className="flex flex-col space-y-5 text-white py-2">
+                <div className="flex font-semibold text-sm items-center justify-center">
                     <UilTemperature size={18} className="mr-1"/>
                     Real fell:
-                    <span className="font-medium ml-1">{`${feels_like}°`}</span>
+                    <span className="font-semibold ml-1">{`${feels_like}°`}</span>
                 </div>
-                <div className="flex font-light text-sm items-center justify-center">
+                <div className="flex font-semibold text-sm items-center justify-center">
                     <UilTear size={18} className="mr-1"/>
                     Humidity:
-                    <span className="font-medium ml-1">{`${humidity}%`}</span>
+                    <span className="font-semibold ml-1">{`${humidity}%`}</span>
                 </div>
-                <div className="flex font-light text-sm items-center justify-center">
+                <div className="flex font-semibold text-sm items-center justify-center">
                     <UilWind size={18} className="mr-1"/>
                     Wind:
-                    <span className="font-medium ml-1">{`${speed} KM/H`}</span>
+                    <span className="font-semibold ml-1">{`${speed} KM/H`}</span>
                 </div>
 
             </div>

@@ -6,6 +6,7 @@ import TemperatureDetails from './components/TemperatureDetails';
 import Forecast from './components/Forecast';
 import getFormattedWeatherData from './services/WeatherFetch';
 import { useEffect, useState } from 'react';
+import AI from './components/AI';
 
 function App() { 
 
@@ -36,14 +37,17 @@ function App() {
 
 
   return (
-   <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-black to-blue-700 h-fit shadow-xl shadow-grey-400 ">
+   <div className="mx-auto min-w-screen-md mt-5 py-5 px-32 header-shadow h-fit ">
    <TopButtons />
    <Inputs />
+
+
 
    {weather && (
     <div>
      <TimeAndLocation weather={weather} /> 
      <TemperatureDetails weather={weather} /> 
+     <AI /> 
      <Forecast title={"Hourly Forecast"} /> 
      <Forecast title={"DAILY Forecast"} /> 
      </div>
