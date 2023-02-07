@@ -4,13 +4,13 @@ import { formatToLocalTime, iconUrlFromCode } from '../services/WeatherFetch'
 
 function TemperatureDetails({weather:{
     details,icon, temp, temp_min, temp_max, sunrise, sunset, speed, humidity, feels_like, timezone
-}}) {
+}}, items) {
   return (
     <div>
         
         <div className="flex items-center justify-center py-6 text-xl text-cyan-300">
             <p>{details}</p>
-            <img src={iconUrlFromCode(icon)} alt="" className="w-50"/>
+            <img src={iconUrlFromCode(items.icon)} alt="" className="w-50"/>
         </div>
      
       
@@ -21,7 +21,7 @@ function TemperatureDetails({weather:{
       
 
         <img src={iconUrlFromCode(icon)} alt="" className="w-50"/>
-            <p className="text-5xl items-center justify-center py-6">{`${temp}°`}</p>
+            <p className="text-5xl items-center justify-center py-6">{`${temp.toFixed()}°`}</p>
 
         
 
@@ -29,7 +29,7 @@ function TemperatureDetails({weather:{
                 <div className="flex font-semibold text-sm items-center justify-center">
                     <UilTemperature size={18} className="mr-1"/>
                     Real fell:
-                    <span className="font-semibold ml-1">{`${feels_like}°`}</span>
+                    <span className="font-semibold ml-1">{`${feels_like.toFixed()}°`}</span>
                 </div>
                 <div className="flex font-semibold text-sm items-center justify-center">
                     <UilTear size={18} className="mr-1"/>

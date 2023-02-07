@@ -21,6 +21,21 @@
 
   
 }
+
+.header-shadow2{
+  background-image: url('../public/pixel5.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  
+}
+.header-shadow2{
+  background-image: url('../public/pixel1.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  
+}
 .AI{
   background-image: url('../public/ai.ico');
 
