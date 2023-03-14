@@ -23,8 +23,6 @@ function TemperatureDetails({weather:{
         <img src={iconUrlFromCode(icon)} alt="" className="w-50"/>
             <p className="text-5xl items-center justify-center py-6">{`${temp.toFixed()}°`}</p>
 
-        
-
             <div className="flex flex-col space-y-5 text-white py-2">
                 <div className="flex font-semibold text-sm items-center justify-center">
                     <UilTemperature size={18} className="mr-1"/>
