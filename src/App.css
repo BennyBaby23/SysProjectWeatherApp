@@ -36,6 +36,9 @@
   background-size: cover;
   
 }
+.color-red {
+  color: red;
+}
 .AI{
   background-image: url('../public/ai.ico');
 

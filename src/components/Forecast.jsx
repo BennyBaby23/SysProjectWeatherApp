@@ -14,12 +14,12 @@ function Forecast({title, items}) {
             {items.map(item => (
 
                 <div className="flex flex-col items-center">
-                <p className="font-light text-sm">
+                <p className="font-light text-lg">
                     {item.title}
                 </p>
                 {/* //imgae put */}
-                <img src={iconUrlFromCode(item.icon)} className="w-12 my-1" alt="" />
-                <p className="font-medium">{`${item.temp.toFixed()}°`}</p>
+                <img src={iconUrlFromCode(item.icon)} className="w-10000 my-10000" alt="" />
+                <p className="font-small">{`${item.temp.toFixed()}°`}</p>
                 </div>
 
             ))}
